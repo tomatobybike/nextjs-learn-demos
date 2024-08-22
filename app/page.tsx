@@ -27,8 +27,8 @@ export default async function Home() {
     .then((res) => res.json())
     .catch((e) => console.log(e));
 
-  await redis.incr("view");
-  const view: number = (await redis.get("view")) || 0;
+  // await redis.incr("view");
+  const view: number =  0;
 
   return (
     <>
